@@ -1,0 +1,16 @@
+@import "global/reset.scss";
+@import "global/variables.scss";
+@import "global/header.scss";
+@import "global//footer.scss";
+@import "./compoment/aboutme.scss";
+@import "./compoment/contact.scss";
+@import "./compoment/works.scss";
+
+* {
+    .lines {
+        display: flex;
+        flex-direction: row;
+        height: 872px;
+        border-left: 1px solid $SecondaryColor ;
+    }
+}
