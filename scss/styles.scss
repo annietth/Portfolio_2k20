@@ -7,10 +7,6 @@
 @import "./compoment/works.scss";
 
 * {
-    .lines {
-        display: flex;
-        flex-direction: row;
-        height: 872px;
-        border-left: 1px solid $SecondaryColor ;
-    }
+    background-color: $TercetColor;
+    color: $SecondaryColor;
 }
