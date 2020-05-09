@@ -8,13 +8,12 @@ h4  {
     text-align: center;
 }
 .projet {
-    border: 1px solid blue;
-    padding: 5%;
+    
     display: flex;
     flex-direction: column;
     &__cards {
+        padding: 10%;
         &__card {
-            border :1px solid red;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -30,7 +29,6 @@ h4  {
                 position: relative;
                 z-index: 1;
                 &--title {
-                    border: 1px solid orange;
                     justify-content: space-between;
                     flex-direction: row-reverse;
                     writing-mode: vertical-lr;
@@ -38,36 +36,16 @@ h4  {
                     position: absolute;                   
                 }
                 &--subtitle{
-                    border: 1px solid green;
                     justify-content: space-between;
                     writing-mode: vertical-lr;
                     position: absolute;
+                    margin-left: 93%;
                 }
                 & img {
-                    border: 1px solid violet;
                     width:594px;
-                    height:611px;
+                    height:600px;
                 }
-                & a {
-                    display: flex;
-                    text-decoration: none;
-                    justify-content: space-evenly;
-                    border: 1px solid purple;
-                    padding: 5%;
-                    font-family: 'Karla', sans-serif;
-                    font-weight: bold;
-                    font-size: 120px;
-                    -webkit-text-stroke: 3px $PrimaryColor;
-                    -webkit-text-fill-color: $TercetColor;
-                    letter-spacing: 2px; 
-                }
-                & a:hover {
-                    cursor: pointer;
-                    -webkit-text-stroke: 2px $PrimaryColor;
-                    -webkit-text-fill-color: $PrimaryColor;
-                    letter-spacing: 2px;
-        
-                }
+
             }
             &__text :hover {
                 cursor: pointer;
@@ -77,11 +55,106 @@ h4  {
 
             }
             & p {
-                border: 1px solid black;
                 width: 340px;
                 height: 150px;
                 font-weight: bold;
                 font-size: 15px;
+                margin-bottom: 35%;
+            }
+            & a {
+                text-decoration: none;
+                justify-content: space-evenly;
+                padding: 5%;
+                font-family: 'Karla', sans-serif;
+                font-weight: bold;
+                font-size: 120px;
+                -webkit-text-stroke: 3px $PrimaryColor;
+                -webkit-text-fill-color: $TercetColor;
+                letter-spacing: 2px; 
+                position: absolute;
+                z-index: 1;
+            }
+            & a :hover{
+                cursor: pointer;
+                -webkit-text-stroke: 2px $PrimaryColor;
+                -webkit-text-fill-color: $PrimaryColor;
+                letter-spacing: 2px;
+            }
+        }
+    }
+    &__cards2 {
+        border: 2px solid green;
+        padding: 10%;
+
+
+        &__card {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 1206px;
+            &__text {
+                display: flex;
+                font-family: 'Karla', sans-serif;
+                font-weight: bold;
+                font-size: 40px;
+                -webkit-text-stroke: 2px $PrimaryColor;
+                letter-spacing: 2px;
+                position: relative;
+                z-index: 1;
+
+                &--title {
+                    justify-content: space-between;
+                    flex-direction: row-reverse;
+                    writing-mode: vertical-lr;
+                    text-orientation: sideways-left;
+                    position: absolute;
+                    margin-left: 93%;                   
+                }
+                &--subtitle{
+                    justify-content: space-between;
+                    writing-mode: vertical-lr;
+                    position: absolute;
+                    
+                }
+                & img {
+                    width:594px;
+                    height:611px;
+                }
+
+            }
+            &__text :hover {
+                cursor: pointer;
+                -webkit-text-stroke: 2px $PrimaryColor;
+                -webkit-text-fill-color: $PrimaryColor;
+                letter-spacing: 2px;
+
+            }
+            & p {
+                width: 340px;
+                height: 150px;
+                font-weight: bold;
+                font-size: 15px;
+                margin-bottom: 35%;
+            }
+            & a {
+                text-decoration: none;
+                justify-content: space-evenly;
+                padding: 5%;
+                font-family: 'Karla', sans-serif;
+                font-weight: bold;
+                font-size: 120px;
+                -webkit-text-stroke: 3px $PrimaryColor;
+                -webkit-text-fill-color: $TercetColor;
+                letter-spacing: 2px; 
+                position: absolute;
+                z-index: 1;
+            }
+            & a :hover{
+                cursor: pointer;
+                -webkit-text-stroke: 2px $PrimaryColor;
+                -webkit-text-fill-color: $PrimaryColor;
+                letter-spacing: 2px;
             }
         }
     }
