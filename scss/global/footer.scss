@@ -1,16 +1,17 @@
 .footer {
-    border: 1px solid blue;
     display: flex;
     width: 33vw;
     justify-content: space-evenly;
     align-items: center;
-    background-color: $SecondaryColor;
+    background-color: $PrimaryColor;
+    padding: 5%;
     width: 1366px;
-    height: 30px;
+    overflow: hidden;
+
     & p { 
         font-family: 'Karla', sans-serif;
         font-size: normal;
-        background-color: $SecondaryColor;
+        background-color: $PrimaryColor;
         color: $TercetColor;
     }
 }
