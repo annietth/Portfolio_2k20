@@ -10,8 +10,10 @@
             align-items: center;
             color: $SecondaryColor;
             &__logo {
+            display: flex;
             text-decoration: none;
-            margin-right: 24%;
+            align-items: center;
+            margin: 22%;
                 & h1 {
                     width: 18vw;
                     font-family: 'Anton', sans-serif;
@@ -22,21 +24,12 @@
                 }
             }
             &__nav a {
-                position: absolute;
-                left: 0px;
-                height: 100vh;
-                font-size: 12px;
-                top: 8vh;
-                background-color:$PrimaryColor ;
-                display: flex;
-                flex-direction: column;
-                width: 50%;
-                transition: transform 0.5s ease-in;
-                z-index: 1;
-                opacity: 0;
+                text-decoration: none;
+                align-items: center;
+                
                 & li {
                     z-index: 2;
-                    color: $TercetColor;
+                    color: $PrimaryColor;
                 } 
             }
             &__nav-active {
