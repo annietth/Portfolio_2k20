@@ -1,20 +1,21 @@
 // MOBILE
 @media screen and (max-width: 375px) {
     body {
-        
         overflow-x: hidden;
-    
         .header {
             display: flex;
             flex-direction: row-reverse;
-            justify-content: space-evenly;
+            justify-content: space-between;
             text-decoration: none;
             align-items: center;
-            list-style: none;
+            color: $SecondaryColor;
             &__logo {
+            display: flex;
             text-decoration: none;
+            align-items: center;
+            margin: 22%;
                 & h1 {
-                    width: 8vw;
+                    width: 18vw;
                     font-family: 'Anton', sans-serif;
                     font-size: 44px;
                     font-weight: bold;
@@ -22,63 +23,71 @@
                     -webkit-text-fill-color: $TercetColor;
                 }
             }
-
             &__nav a {
-                position: absolute;
-                right: 0px;
-                height: 100vh;
-                font-size: 12px;
-                top: 8vh;
-                background-color:$PrimaryColor ;
-                display: flex;
-                flex-direction: column;
-                width: 50%;
-                transition: transform 0.5s ease-in;
-                z-index: 1;
-                
-                opacity: 0;
+                text-decoration: none;
+                align-items: center;
                 
                 & li {
                     z-index: 2;
-                    color: white;
-                }
-                
+                    color: $PrimaryColor;
+                } 
             }
             &__nav-active {
                 transform: translateX(0);
                 opacity: 1;
             
             }
-
-        
             &__burger {
                 display: block;
-                cursor: pointer;
-                
-                
+                cursor: pointer;  
             }
         }                 
     }
 }
 
+
 //TABLETTE
 
-// DESKTOP
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 768px) {
     .header {
         display: flex;
         justify-content: space-between;
         text-decoration: none;
         align-items: center;
         list-style: none;
+        &__logo {
+            text-decoration: none;
+            & h1 {
+                margin: 40% ; 
+                font-family: 'Anton', sans-serif;
+                font-weight: bold;
+                font-size: 58px;
+                
+            }
+        }
+
+
+    }
+}
+
+// DESKTOP
+@media screen and (max-width: 1366px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        
+
 
         &__logo {
             text-decoration: none;
             & h1{
-                width: 8vw;
-                margin: 40% ; 
+                width: 4vw;
                 font-family: 'Anton', sans-serif;
                 font-weight: bold;
+                margin: 50%;
                 font-size: 58px;
                 -webkit-text-stroke: 2px $SecondaryColor;
                 -webkit-text-fill-color: $TercetColor;
@@ -87,15 +96,15 @@
         &__nav {
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             font-family: 'Karla', sans-serif;
             font-size: normal;
-            margin: 5%;
             letter-spacing: 2px; 
             font-weight: bold;
             & a{
                 
                 text-decoration: none;
-                font-size: 38px;
+                font-size: 24px;
                 font-weight: bold;
                 justify-content: space-around;
                 color: $TercetColor;
@@ -108,17 +117,6 @@
                 -webkit-text-fill-color: $SecondaryColor;
             }
 
-        }
-        &__burger {
-            display: none;
-            cursor: pointer;
-            & div {
-                width: 25px;
-                height: 3px;
-                margin: 5px;
-                background-color: $PrimaryColor;
-                transition: all 0.3s ease;
-            }
         }
     }
     

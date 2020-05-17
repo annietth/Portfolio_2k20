@@ -1,17 +1,30 @@
-.footer {
-    display: flex;
-    width: 33vw;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: $PrimaryColor;
-    padding: 5%;
-    width: 1366px;
-    overflow: hidden;
 
-    & p { 
-        font-family: 'Karla', sans-serif;
-        font-size: normal;
+@media screen and (max-width: 375px) {
+    .footer {
         background-color: $PrimaryColor;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
         color: $TercetColor;
     }
+    
+}
+@media screen and (max-width: 1475px) {
+    .footer {
+        display: flex;
+        height: 20vh;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $PrimaryColor; 
+    
+        & p { 
+            font-family: 'Karla', sans-serif;
+            font-size: normal;
+            background-color: $PrimaryColor;
+            color: $TercetColor;
+        }
+    }
+
 }
