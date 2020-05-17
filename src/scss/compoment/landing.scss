@@ -1,162 +1,3 @@
-// h4  {
-//     font-size: 36px;
-//     font-family: 'Karla', sans-serif;
-//     font-weight: bold;
-//     -webkit-text-stroke: 2px $SecondaryColor;
-//     -webkit-text-fill-color: $TercetColor;
-//     letter-spacing: 2px;
-//     text-align: center;
-// }
-// .projet {
-    
-//     display: flex;
-//     flex-direction: column;
-//     &__cards {
-//         padding: 10%;
-//         &__card {
-//             display: flex;
-//             justify-content: space-evenly;
-//             align-items: center;
-//             width: 1206px;
-//             &__text {
-//                 // border: 1px solid brown;
-//                 display: flex;
-//                 font-family: 'Karla', sans-serif;
-//                 font-weight: bold;
-//                 font-size: 40px;
-//                 -webkit-text-stroke: 2px $PrimaryColor;
-//                 letter-spacing: 2px;
-//                 position: relative;
-//                 z-index: 1;
-//                 &--title {
-//                     justify-content: space-between;
-//                     flex-direction: row-reverse;
-//                     writing-mode: vertical-lr;
-//                     text-orientation: sideways-left;
-//                     position: absolute;                   
-//                 }
-//                 &--subtitle{
-//                     justify-content: space-between;
-//                     writing-mode: vertical-lr;
-//                     position: absolute;
-//                     margin-left: 93%;
-//                 }
-//                 & img {
-//                     width:594px;
-//                     height:600px;
-//                 }
-
-//             }
-//             &__text :hover {
-//                 cursor: pointer;
-//                 -webkit-text-stroke: 2px $PrimaryColor;
-//                 -webkit-text-fill-color: $PrimaryColor;
-//                 letter-spacing: 2px;
-
-//             }
-//             & p {
-//                 width: 340px;
-//                 height: 150px;
-//                 font-weight: bold;
-//                 font-size: 15px;
-//                 margin-bottom: 35%;
-//             }
-//             & a {
-//                 text-decoration: none;
-//                 justify-content: space-evenly;
-//                 padding: 5%;
-//                 font-family: 'Karla', sans-serif;
-//                 font-weight: bold;
-//                 font-size: 120px;
-//                 -webkit-text-stroke: 3px $PrimaryColor;
-//                 -webkit-text-fill-color: $TercetColor;
-//                 letter-spacing: 2px; 
-//                 position: absolute;
-//                 z-index: 1;
-//             }
-//             & a :hover{
-//                 cursor: pointer;
-//                 -webkit-text-stroke: 2px $PrimaryColor;
-//                 -webkit-text-fill-color: $PrimaryColor;
-//                 letter-spacing: 2px;
-//             }
-//         }
-//     }
-//     &__cards2 {
-//         border: 2px solid green;
-//         padding: 10%;
-//         &__card {
-//             display: flex;
-//             flex-direction: row-reverse;
-//             justify-content: space-evenly;
-//             align-items: center;
-//             width: 1206px;
-//             &__text {
-//                 display: flex;
-//                 font-family: 'Karla', sans-serif;
-//                 font-weight: bold;
-//                 font-size: 40px;
-//                 -webkit-text-stroke: 2px $PrimaryColor;
-//                 letter-spacing: 2px;
-//                 position: relative;
-//                 z-index: 1;
-
-//                 &--title {
-//                     justify-content: space-between;
-//                     flex-direction: row-reverse;
-//                     writing-mode: vertical-lr;
-//                     text-orientation: sideways-left;
-//                     position: absolute;
-//                     margin-left: 93%;                   
-//                 }
-//                 &--subtitle{
-//                     justify-content: space-between;
-//                     writing-mode: vertical-lr;
-//                     position: absolute;
-                    
-//                 }
-//                 & img {
-//                     width:594px;
-//                     height:611px;
-//                 }
-
-//             }
-//             &__text :hover {
-//                 cursor: pointer;
-//                 -webkit-text-stroke: 2px $PrimaryColor;
-//                 -webkit-text-fill-color: $PrimaryColor;
-//                 letter-spacing: 2px;
-
-//             }
-//             & p {
-//                 width: 340px;
-//                 height: 150px;
-//                 font-weight: bold;
-//                 font-size: 15px;
-//                 margin-bottom: 35%;
-//             }
-//             & a {
-//                 text-decoration: none;
-//                 justify-content: space-evenly;
-//                 padding: 5%;
-//                 font-family: 'Karla', sans-serif;
-//                 font-weight: bold;
-//                 font-size: 120px;
-//                 -webkit-text-stroke: 3px $PrimaryColor;
-//                 -webkit-text-fill-color: $TercetColor;
-//                 letter-spacing: 2px; 
-//                 position: absolute;
-//                 z-index: 1;
-//             }
-//             & a :hover{
-//                 cursor: pointer;
-//                 -webkit-text-stroke: 2px $PrimaryColor;
-//                 -webkit-text-fill-color: $PrimaryColor;
-//                 letter-spacing: 2px;
-//             }
-//         }
-//     }
-// }
 @media screen and (max-width: 375px) {
     h4 {
         font-size: 24px;
@@ -168,56 +9,76 @@
         text-align: center;
     }
     .projet {
+        // background-image: url("src/images/background/lines.svg");
         &__cards {
             &__card {
-                border: 1px solid red;
-                padding: 5%;
-                margin-top: 5%;
+                display: flex;
+                align-items: center;
+                text-align: center;
                 &__text {
-                    border: 1px solid orange;
-                    padding: 5%;
+                    color: $TercetColor;
+                }
+                & img {
+                    border: 1px solid slateblue;
+                    width: 60%;
+                    height: 40vh;
+                    margin: 10%;
+                }
+                & h3 {
+                    font-size: 48px;
+                }
+                & a {
+                    text-decoration: none;
+                    align-items: center;
+                    justify-content: space-evenly;
                     font-family: 'Karla', sans-serif;
                     font-weight: bold;
-                    font-size: 14px;
-                    -webkit-text-stroke: 2px $PrimaryColor;
-                    -webkit-text-fill-color: $TercetColor;
-                    letter-spacing: 2px;
-                    &--title {
-                        border: 1px solid violet;
-                        padding: 5%;  
-                        display: flex;
-                        justify-content: space-between;
-                    }
-                    &--subtitle {
-                        border: 1px solid yellow;
-                        padding: 5px;
-                    }
+                    font-size: 48 px;
+                    -webkit-text-stroke: 3px $PrimaryColor;
+                    -webkit-text-fill-color: transparent;
+                    letter-spacing: 2px; 
+                    position: absolute;
+                    z-index: 1;
                 }
-                 &__text :hover {
+                & a :hover{
                     cursor: pointer;
                     -webkit-text-stroke: 2px $PrimaryColor;
                     -webkit-text-fill-color: $PrimaryColor;
                     letter-spacing: 2px;
-
+                }
+            }
+        }
+    
+        &__cards2 {
+            &__card {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                &__text {
+                    color: $TercetColor;
                 }
                 & img {
                     border: 1px solid slateblue;
-                    width: 100%;
-                    height: 100%;
-                    
+                    width: 60%;
+                    height: 40vh;
+                    margin: 10%;
+                }
+                & h3 {
+                    font-size: 48px;
+                    align-items: center;
+                    text-align: center;
                 }
                 & a {
                     text-decoration: none;
+                    align-items: center;
                     justify-content: space-evenly;
                     font-family: 'Karla', sans-serif;
                     font-weight: bold;
-                    font-size: 32 px;
                     -webkit-text-stroke: 3px $PrimaryColor;
-                    -webkit-text-fill-color: $TercetColor;
+                    -webkit-text-fill-color: transparent;
                     letter-spacing: 2px; 
                     position: absolute;
                     z-index: 1;
-                    
                 }
                 & a :hover{
                     cursor: pointer;
@@ -228,5 +89,166 @@
             }
         }
     }
-
 }
+@media screen and (max-width: 1366px) {
+    h4  {
+        font-size: 36px;
+        font-family: 'Karla', sans-serif;
+        font-weight: bold;
+        -webkit-text-stroke: 2px $SecondaryColor;
+        -webkit-text-fill-color: $TercetColor;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .projet {
+        
+        display: flex;
+        flex-direction: column;
+        &__cards {
+            padding: 10%;
+            &__card {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 1206px;
+                &__text {
+                    // border: 1px solid brown;
+                    display: flex;
+                    font-family: 'Karla', sans-serif;
+                    font-weight: bold;
+                    font-size: 40px;
+                    -webkit-text-stroke: 2px $PrimaryColor;
+                    letter-spacing: 2px;
+                    position: relative;
+                    z-index: 1;
+                    &--title {
+                        justify-content: space-between;
+                        flex-direction: row-reverse;
+                        writing-mode: vertical-lr;
+                        text-orientation: sideways-left;
+                        position: absolute;                   
+                    }
+                    &--subtitle{
+                        justify-content: space-between;
+                        writing-mode: vertical-lr;
+                        position: absolute;
+                        margin-left: 93%;
+                    }
+                    & img {
+                        width:594px;
+                        height:600px;
+                    }
+    
+                }
+                &__text :hover {
+                    cursor: pointer;
+                    -webkit-text-stroke: 2px $PrimaryColor;
+                    -webkit-text-fill-color: $PrimaryColor;
+                    letter-spacing: 2px;
+    
+                }
+                & p {
+                    width: 340px;
+                    height: 150px;
+                    font-weight: bold;
+                    font-size: 15px;
+                    margin-bottom: 35%;
+                }
+                & a {
+                    text-decoration: none;
+                    justify-content: space-evenly;
+                    padding: 5%;
+                    font-family: 'Karla', sans-serif;
+                    font-weight: bold;
+                    font-size: 120px;
+                    -webkit-text-stroke: 3px $PrimaryColor;
+                    -webkit-text-fill-color: $TercetColor;
+                    letter-spacing: 2px; 
+                    position: absolute;
+                    z-index: 1;
+                }
+                & a :hover{
+                    cursor: pointer;
+                    -webkit-text-stroke: 2px $PrimaryColor;
+                    -webkit-text-fill-color: $PrimaryColor;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+        &__cards2 {
+            border: 2px solid green;
+            padding: 10%;
+            &__card {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 1206px;
+                &__text {
+                    display: flex;
+                    font-family: 'Karla', sans-serif;
+                    font-weight: bold;
+                    font-size: 40px;
+                    -webkit-text-stroke: 2px $PrimaryColor;
+                    letter-spacing: 2px;
+                    position: relative;
+                    z-index: 1;
+    
+                    &--title {
+                        justify-content: space-between;
+                        flex-direction: row-reverse;
+                        writing-mode: vertical-lr;
+                        text-orientation: sideways-left;
+                        position: absolute;
+                        margin-left: 93%;                   
+                    }
+                    &--subtitle{
+                        justify-content: space-between;
+                        writing-mode: vertical-lr;
+                        position: absolute;
+                        
+                    }
+                    & img {
+                        width:594px;
+                        height:611px;
+                    }
+    
+                }
+                &__text :hover {
+                    cursor: pointer;
+                    -webkit-text-stroke: 2px $PrimaryColor;
+                    -webkit-text-fill-color: $PrimaryColor;
+                    letter-spacing: 2px;
+    
+                }
+                & p {
+                    width: 340px;
+                    height: 150px;
+                    font-weight: bold;
+                    font-size: 15px;
+                    margin-bottom: 35%;
+                }
+                & a {
+                    text-decoration: none;
+                    justify-content: space-evenly;
+                    padding: 5%;
+                    font-family: 'Karla', sans-serif;
+                    font-weight: bold;
+                    font-size: 120px;
+                    -webkit-text-stroke: 3px $PrimaryColor;
+                    -webkit-text-fill-color: $TercetColor;
+                    letter-spacing: 2px; 
+                    position: absolute;
+                    z-index: 1;
+                }
+                & a :hover{
+                    cursor: pointer;
+                    -webkit-text-stroke: 2px $PrimaryColor;
+                    -webkit-text-fill-color: $PrimaryColor;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
+

@@ -11,7 +11,7 @@
             flex-direction: column;
             font-family:'Biryani', sans-serif;
             padding: 50%;
-            // background-image: url("../../images/background/cherryblossom.png");
+            // background-image: url("src/images/background/cherryblossom.png");
             & h1 {
                 font-size: 89px;
                 font-weight: bold;
@@ -39,47 +39,47 @@
 
 
 // }
-// @media screen and (max-width: 1475px) {
-//     .hero {
+@media screen and (max-width: 1366px) {
+    .hero {
     
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         font-family:'Biryani', sans-serif;
-//         background-image: url("../images/background/cherryblossom.png");
-//         background-size: 1533px 616px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family:'Biryani', sans-serif;
+        // background-image: url("../images/background/cherryblossom.png");
+        // background-size: 1533px 616px;
         
         
-//         &__presentation {
-//             display: flex;
-//             flex-direction: column;
-//             width: 532px;
-//             height: 253px;
-//             & h1 {
-//                 font-size: 96px;
-//                 font-weight: bold;
-//                 -webkit-text-stroke: 2px $PrimaryColor;
-//                 -webkit-text-fill-color: $SecondaryColor;
-//             }
-//             & h2 {
-//                 font-size: 48px;
-//                 font-weight: bold;
-//                 -webkit-text-stroke: 2px $PrimaryColor;
-//                 -webkit-text-fill-color: $PrimaryColor;
-//             }
-//             & h3 {
-//                 font-size: 32px;
-//                 font-weight: bold;
-//                 -webkit-text-stroke: 2px $SecondaryColor;
-//                 -webkit-text-fill-color: $TercetColor;
-//             }
-//         }
-//     }
-//     .division {
-//         margin-top: 8%;
-//         width: 495px;
-//         height: 48px;
-//         background-color: $PrimaryColor;
-//     }
+        &__presentation {
+            display: flex;
+            flex-direction: column;
+            width: 532px;
+            height: 253px;
+            & h1 {
+                font-size: 96px;
+                font-weight: bold;
+                -webkit-text-stroke: 2px $PrimaryColor;
+                -webkit-text-fill-color: $SecondaryColor;
+            }
+            & h2 {
+                font-size: 48px;
+                font-weight: bold;
+                -webkit-text-stroke: 2px $PrimaryColor;
+                -webkit-text-fill-color: $PrimaryColor;
+            }
+            & h3 {
+                font-size: 32px;
+                font-weight: bold;
+                -webkit-text-stroke: 2px $SecondaryColor;
+                -webkit-text-fill-color: $TercetColor;
+            }
+        }
+    }
+    .division {
+        margin-top: 8%;
+        width: 495px;
+        height: 48px;
+        background-color: $PrimaryColor;
+    }
 
-// }
+}
