@@ -1,1 +1,35 @@
-
+@media (min-width: 375px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family:'Biryani', sans-serif;
+        color: $saumon;
+        &__presentation {
+            display: flex;
+            flex-direction: column;
+            font-family:'Biryani', sans-serif;
+            padding: 50%;
+            & h1 {
+                font-size: 89px;
+                font-weight: bold;
+            }
+            & h2 {
+                font-size: 42px;
+                color: $red;
+                -webkit-text-stroke: 2px $red;
+            }
+            & h3 {
+                font-size: 42px;
+                font-weight: bold;
+                -webkit-text-stroke: 2px $red;
+                -webkit-text-fill-color: $white;
+            }
+        }
+    }
+    .division {
+        width: 62vw;
+        height: 5vh;
+        background-color: $red;
+    }
+}

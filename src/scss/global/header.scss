@@ -1,20 +1,40 @@
 @media (min-width: 375px) {
-    .header{
+    .header {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        text-decoration: none;
         align-items: center;
+        color: $saumon;
         &__logo {
-            text-decoration: none;
-            list-style: none;
-            & a {
-                font-size: 24px;
-                --webkit-text-fill-color: $white;
-                --webkit-text-stroke-color: $saumon;
-            }
-            & strong {
-                font-size: 32px;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        margin: 22%;
+            & h1 {
+                width: 18vw;
+                font-family: 'Anton', sans-serif;
+                font-size: 44px;
+                font-weight: bold;
+                -webkit-text-stroke: 2px $saumon;
+                -webkit-text-fill-color: $white;
             }
         }
-    }
+        &__nav a {
+            text-decoration: none;
+            align-items: center;
+            & li {
+                z-index: 2;
+                color: $red;
+            } 
+        }
+        &__nav-active {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        &__burger {
+            display: block;
+            cursor: pointer;  
+        }
+    }                 
 }
